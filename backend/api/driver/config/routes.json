@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/drivers",
+      "handler": "Driver.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/drivers/count",
+      "handler": "Driver.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/drivers/:id",
+      "handler": "Driver.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/drivers",
+      "handler": "Driver.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/drivers/:id",
+      "handler": "Driver.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/drivers/:id",
+      "handler": "Driver.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "seasons",
+  "info": {
+    "name": "season",
+    "description": "A season with a racing series"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "races": {
+      "collection": "race",
+      "via": "season"
+    },
+    "series": {
+      "model": "series",
+      "via": "seasons"
+    },
+    "teamentries": {
+      "collection": "teamentry",
+      "via": "season"
+    }
+  }
+}

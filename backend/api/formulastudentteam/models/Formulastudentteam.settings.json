@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "formulastudentteams",
+  "info": {
+    "name": "formulastudentteam",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "team_entry": {
+      "model": "teamentry",
+      "via": "formula_student_team"
+    }
+  }
+}

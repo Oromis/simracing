@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "classes",
+  "info": {
+    "name": "class",
+    "description": "Racing class for a car"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "cars": {
+      "collection": "car",
+      "via": "class"
+    },
+    "championships": {
+      "collection": "championship",
+      "via": "class"
+    }
+  }
+}

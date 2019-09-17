@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "tracks",
+  "info": {
+    "name": "track",
+    "description": "A race track"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "races": {
+      "collection": "race",
+      "via": "track"
+    },
+    "location": {
+      "model": "location",
+      "via": "tracks"
+    }
+  }
+}

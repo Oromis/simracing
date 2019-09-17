@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "liveries",
+  "info": {
+    "name": "livery",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "car": {
+      "model": "car",
+      "via": "liveries"
+    },
+    "driverentries": {
+      "collection": "driverentry",
+      "via": "livery"
+    }
+  }
+}

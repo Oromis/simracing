@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "races",
+  "info": {
+    "name": "race",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "season": {
+      "model": "season",
+      "via": "races"
+    },
+    "track": {
+      "model": "track",
+      "via": "races"
+    }
+  }
+}

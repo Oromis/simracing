@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/driverentries",
+      "handler": "Driverentry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/driverentries/count",
+      "handler": "Driverentry.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/driverentries/:id",
+      "handler": "Driverentry.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/driverentries",
+      "handler": "Driverentry.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/driverentries/:id",
+      "handler": "Driverentry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/driverentries/:id",
+      "handler": "Driverentry.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

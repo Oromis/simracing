@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/liveries",
+      "handler": "Livery.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/liveries/count",
+      "handler": "Livery.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/liveries/:id",
+      "handler": "Livery.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/liveries",
+      "handler": "Livery.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/liveries/:id",
+      "handler": "Livery.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/liveries/:id",
+      "handler": "Livery.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

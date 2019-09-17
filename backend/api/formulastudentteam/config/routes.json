@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/formulastudentteams",
+      "handler": "Formulastudentteam.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formulastudentteams/count",
+      "handler": "Formulastudentteam.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formulastudentteams/:id",
+      "handler": "Formulastudentteam.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formulastudentteams",
+      "handler": "Formulastudentteam.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/formulastudentteams/:id",
+      "handler": "Formulastudentteam.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/formulastudentteams/:id",
+      "handler": "Formulastudentteam.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

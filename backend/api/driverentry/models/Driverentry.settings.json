@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "driverentries",
+  "info": {
+    "name": "driverentry",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "driver": {
+      "model": "driver",
+      "via": "driverentry"
+    },
+    "teamentry": {
+      "model": "teamentry",
+      "via": "driverentries"
+    },
+    "livery": {
+      "model": "livery",
+      "via": "driverentries"
+    }
+  }
+}

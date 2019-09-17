@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "drivers",
+  "info": {
+    "name": "driver",
+    "description": "A driver participating in races and/or racing series"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "user": {
+      "model": "user",
+      "via": "driver",
+      "plugin": "users-permissions"
+    },
+    "driverentry": {
+      "model": "driverentry",
+      "via": "driver"
+    }
+  }
+}

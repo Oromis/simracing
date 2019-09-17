@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/championships",
+      "handler": "Championship.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/championships/count",
+      "handler": "Championship.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/championships/:id",
+      "handler": "Championship.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/championships",
+      "handler": "Championship.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/championships/:id",
+      "handler": "Championship.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/championships/:id",
+      "handler": "Championship.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

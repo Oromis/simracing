@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "cars",
+  "info": {
+    "name": "car",
+    "description": "A car type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "manufacturer": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "model": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "liveries": {
+      "collection": "livery",
+      "via": "car"
+    },
+    "teamentries": {
+      "collection": "teamentry",
+      "via": "car"
+    },
+    "class": {
+      "model": "class",
+      "via": "cars"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teamentries",
+      "handler": "Teamentry.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teamentries/count",
+      "handler": "Teamentry.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teamentries/:id",
+      "handler": "Teamentry.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teamentries",
+      "handler": "Teamentry.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teamentries/:id",
+      "handler": "Teamentry.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teamentries/:id",
+      "handler": "Teamentry.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "teamentries",
+  "info": {
+    "name": "teamentry",
+    "description": "A team participating in a racing series"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "formula_student_team": {
+      "model": "formulastudentteam",
+      "via": "team_entry"
+    },
+    "season": {
+      "model": "season",
+      "via": "teamentries"
+    },
+    "car": {
+      "model": "car",
+      "via": "teamentries"
+    },
+    "driverentries": {
+      "collection": "driverentry",
+      "via": "teamentry"
+    }
+  }
+}
