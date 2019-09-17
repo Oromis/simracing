@@ -1,6 +1,6 @@
 {
-  "host": "admin.simracingtrohpy.com",
-  "port": 80,
+  "host": "localhost",
+  "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
     "enabled": false
