@@ -18,16 +18,16 @@
       "required": true,
       "type": "string"
     },
-    "driver": {
-      "model": "driver",
-      "via": "driverentry"
-    },
     "teamentry": {
       "model": "teamentry",
       "via": "driverentries"
     },
     "livery": {
       "model": "livery",
+      "via": "driverentries"
+    },
+    "driver": {
+      "model": "driver",
       "via": "driverentries"
     }
   }
