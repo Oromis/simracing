@@ -1,0 +1,30 @@
+// Import
+@import "~strapi-admin/admin/src/styles/variables/variables";
+
+.leftMenuHeader {
+  height: $header-height;
+  background: #141c2c;
+}
+
+.projectName {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: $header-height;
+  vertical-align: middle;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: $white;
+
+  background-image: url('../../assets/images/easrt-banner.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.leftMenuHeaderLink {
+  &:hover {
+    text-decoration: none;
+  }
+}
